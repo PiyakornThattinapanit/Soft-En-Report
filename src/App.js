@@ -1,24 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Icon from './icon/Icon';
+import Salespage from './Pages/receipt/sales_page/Salespage';
+import Bestseller from './Pages/receipt/bestseller/Bestseller';
+import Receipt from './Pages/receipt/Receipt'
+import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import Navbarhome from './Navbarsale';
+// import { Navbar } from 'react-bootstrap/navba';
+// import Navbar from './Navbar'
+import { useEffect, useRef, useState ,React} from 'react'
+// import DateRangePickerComp from './Calendar/DateRangePickerComp';
+import format from 'date-fns/format'
+import 'react-date-range/dist/styles.css'
+import 'react-date-range/dist/theme/default.css'
 
-function App() {
+
+
+async function App() {
+  const response = await fetch("https://posme.fun/auth/login", {
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json",
+    },
+    body: JSON.stringify({
+      username:'hello',
+      password:'psswd'
+    })
+  });
+  const data = await response.json();
+  console.log(data);
+
   return (
+  <div>
+    
+    <Navbarhome/>
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Routes>
+        <Route path = '/' element={<Icon />}/>
+         <Route path = '/Salespage' element={<Salespage />}/>
+         <Route path = '/Bestseller' element={<Bestseller />}/>
+         <Route path = '/Receiptpage' element={<Receipt />}/>
+        </Routes> 
+  
+     </div> 
+    </BrowserRouter>
+          </div>
+  
   );
 }
 

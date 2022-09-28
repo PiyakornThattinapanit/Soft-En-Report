@@ -1,0 +1,27 @@
+.color-best{
+    background-color: #242e38;
+}
+
+.bestsellerimg2{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+.select-month{
+    margin-top: 20px;
+}
+.sort-Date{
+    margin-left: 500px;
+}
+.sort-Amount{
+    margin-left: 50px;
+}
+
+.filter{
+    float: left;
+    margin-left: 300px;
+    font-size:xx-large
+}
+
+

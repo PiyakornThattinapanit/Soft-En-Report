@@ -12,16 +12,20 @@
     margin-top: 20px;
 }
 .sort-Date{
-    margin-left: 500px;
+    margin-left: 100px;
 }
 .sort-Amount{
-    margin-left: 50px;
-}
-
-.filter{
-    float: left;
     margin-left: 300px;
+}
+.sort-font{
+    color: white;
+}
+.sort{
+    display: flex;
+    justify-content: center;
     font-size:xx-large
 }
 
-
+.sort-Amount:hover{
+    background-color: yellow;
+}

@@ -7416,7 +7416,7 @@ react-date-range@^1.4.0:
 
 react-datepicker@^4.8.0:
   version "4.8.0"
-  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-4.8.0.tgz#11b8918d085a1ce4781eee4c8e4641b3cd592010"
+  resolved "https://registry.npmjs.org/react-datepicker/-/react-datepicker-4.8.0.tgz"
   integrity sha512-u69zXGHMpxAa4LeYR83vucQoUCJQ6m/WBsSxmUMu/M8ahTSVMMyiyQzauHgZA2NUr9y0FUgOAix71hGYUb6tvg==
   dependencies:
     "@popperjs/core" "^2.9.2"
@@ -7503,7 +7503,7 @@ react-list@^0.8.13:
 
 react-month-picker@^2.2.1:
   version "2.2.1"
-  resolved "https://registry.yarnpkg.com/react-month-picker/-/react-month-picker-2.2.1.tgz#9476c1b196de490ba934ba38683d3387a00d6aae"
+  resolved "https://registry.npmjs.org/react-month-picker/-/react-month-picker-2.2.1.tgz"
   integrity sha512-FJoDanK58ql5z9+FR3KGxw/psUCnDEGWI5UCq74EAj/Pk7Q4SE8obCP69N61gRQzbHrxn8qarjxUfFY1XbTXvQ==
   dependencies:
     react-tapper "^0.1.23"
@@ -7608,7 +7608,7 @@ react-scripts@5.0.1:
 
 react-tapper@^0.1.23:
   version "0.1.23"
-  resolved "https://registry.yarnpkg.com/react-tapper/-/react-tapper-0.1.23.tgz#c3fba199e9b97cc2221467a42ce60cb722140138"
+  resolved "https://registry.npmjs.org/react-tapper/-/react-tapper-0.1.23.tgz"
   integrity sha512-BLV2zRnpTeLQdSf7tUbk9JQ6Og5DKK66kjjbEkhj2Y4wURlIq8YtibWNceKRzBWYiRGcEzJbUZYAcKic4HZLUA==
 
 react-transition-group@^4.4.2:
@@ -7627,6 +7627,11 @@ react@^18.2.0:
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
+
+reactjs-popup@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/reactjs-popup/-/reactjs-popup-2.0.5.tgz#588a74966bb126699429d739948e3448d7771eac"
+  integrity sha512-b5hv9a6aGsHEHXFAgPO5s1Jw1eSkopueyUVxQewGdLgqk2eW0IVXZrPRpHR629YcgIpC2oxtX8OOZ8a7bQJbxA==
 
 read-cache@^1.0.0:
   version "1.0.0"

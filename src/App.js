@@ -12,26 +12,16 @@ import { useEffect, useRef, useState ,React} from 'react'
 import format from 'date-fns/format'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
+import Test from './Calendar/Test';
+import DateRangePickerComp from './Calendar/DateRangePickerComp';
 
 
 
-async function App() {
-  const response = await fetch("https://posme.fun/auth/login", {
-    method:"POST",
-    headers:{
-      "Content-Type":"application/json",
-    },
-    body: JSON.stringify({
-      username:'hello',
-      password:'psswd'
-    })
-  });
-  const data = await response.json();
-  console.log(data);
-
+function App() {
+  
   return (
   <div>
-    
+    {/* <Test/> */}
     <Navbarhome/>
     <BrowserRouter>
     <div className="App">

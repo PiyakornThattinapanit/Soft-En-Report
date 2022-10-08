@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
-import Calendar from 'react-calendar';
-import DateRangePickerComp from '../../../Calendar/DateRangePickerComp';
-import './Salespage.css'
+import Popup from '../../../Popup';
+import './Salespage.css';
 
 
 async function login(){
@@ -23,7 +22,7 @@ async function login(){
 }
 
 const Salespage=()=> {
-  
+  const [popUp,setPopUp] = useState(false);
   const [total,setTotal] = useState('');
 
     const getMonth = async function(e) {
@@ -31,7 +30,7 @@ const Salespage=()=> {
       const sendData = {
         'date': date
       }
-      const response = await fetch('https://posme.fun:2096/reports/total',{
+      const response = await fetch('https://posme.fun:2096/bills/total',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -53,11 +52,11 @@ const Salespage=()=> {
         </div>
 
         {/* ใส่ค่าที่เรา {fetch} มา */}
-        <div className='card_net-worth'>
-          <Card className='net-worth'>
-            NET WORTH: {total}
-          </Card>
-        </div>
+          <button variant="primary" type="submit" className='submit-button' onClick={() => {setPopUp(true)}}>
+            SUBMIT
+          </button>
+            {popUp && <Popup closePopUp={setPopUp}
+            total={total.total}/>}
       </div>  
   </div>
   );

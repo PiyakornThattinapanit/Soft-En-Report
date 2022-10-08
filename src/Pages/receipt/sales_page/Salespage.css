@@ -13,14 +13,6 @@
     margin-top: 30px;
     padding: 5% 30% 100% 30%;
 }
-.net-worth{
-    font-size: xx-large;
-    color: black;
-    border-radius: 3rem;
-    border-color: #EAC43D;
-    display:contents;
-    background-color: #242e38;
-}
 
 .salesimg2{
     margin-top: 100px;
@@ -29,3 +21,19 @@
     height: 200px;
     margin-bottom: 50px;
 }
+
+.submit-button {
+    transition-duration: 0.4s;
+    margin-bottom: 100%;
+  }
+
+.submit-button:active {
+    background-color: #EAC43D;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  
+.submit-button:hover {
+    background-color: #EAC43D;
+    color: white;
+  }

@@ -1,37 +1,32 @@
-import {React,useState} from 'react'
-import Calendar from 'react-calendar'
-
+import React from 'react'
+import './test.css'
 
 const Test = () => {
-  const [active,setActive] = useState('#')
+  let popup = document.getElementById("popup")
   return (
-    <div>
+    <div>Test
+        <link rel='testsheet' href='test.css'/>
+      <body>
+        <div className='container'>
+          <button type='submit' className='btn' onClick={"openPopup()"}>Click</button>
+          <div className='popup' id='popup'>
+            <h2>sdeed</h2>
+            <p>efefef</p>
+            <button type='button' onClick={"closePopup()"}>OKAY</button>
+          </div>
 
-<button type="button" href='#' onClick={() => setActive('#')} class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  SUBMIT
-</button>
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+        </div>
+        <script>
+          function openPopup() {
+            popup.classList.add("open-popup")
+          }
+          function closePopup() {
+            popup.classList.remove("close-popup")
+          }
+        </script>
+      </body>
     </div>
-  </div>
-</div>
-    </div>    
   )
 }
 
 export default Test
-

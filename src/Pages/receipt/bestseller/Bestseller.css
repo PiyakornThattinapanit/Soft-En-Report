@@ -8,14 +8,15 @@
     height: 200px;
     margin-bottom: 50px;
 }
-.select-month{
+.sel-month{
     margin-top: 20px;
-}
-.sort-Date{
-    margin-left: 100px;
+    margin-bottom: 50px;
 }
 .sort-Amount{
     margin-left: 300px;
+}
+.sort-Revenue{
+    margin-left: 100px;
 }
 .sort-font{
     color: white;
@@ -26,6 +27,6 @@
     font-size:xx-large
 }
 
-.sort-Amount:hover{
-    background-color: yellow;
+.list-item{
+    border-radius: 3rem;
 }

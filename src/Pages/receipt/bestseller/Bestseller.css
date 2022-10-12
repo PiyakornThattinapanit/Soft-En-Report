@@ -28,5 +28,13 @@
 }
 
 .list-item{
-    border-radius: 3rem;
+    margin-bottom: 20px;
+}
+.list-item h1{
+    font-size: 3.5vh;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+.fill_empty{
+    padding-bottom: 100%;
 }
